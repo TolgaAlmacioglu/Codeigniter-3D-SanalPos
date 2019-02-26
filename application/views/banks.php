@@ -106,6 +106,9 @@
                                         <select name="model" class="form-control" required="required">
                                             <option value="">Seçiniz...</option>
                                             <option value="3d_model">3D Model</option>
+                                            <option value="3D">3D</option>
+                                            <option value="3d_pay">3D Pay</option>
+                                            <option value="3d_pay_hosting">3D Pay Hosting</option>
                                         </select>
                                     </div>
                                     <div class="col-md-12 mt-2">
