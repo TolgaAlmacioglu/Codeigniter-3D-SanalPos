@@ -37,6 +37,7 @@ class Nestpay
             'rnd' => $rnd,
             'hash' => $hash,
             'storetype' => "3d",
+            //'storetype' => "3d_pay_hosting", //Buraya seçilen banka modeli getirilmeli
             'lang' => "tr",
             'currency' => "949"
         );
