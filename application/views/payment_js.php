@@ -21,7 +21,7 @@
         $(this).attr('style', 'margin-bottom: 15px; cursor: pointer; background-color: #eee !important; border-top-color: #f8ac59; padding: 5px; color: #666; border: solid 1px #e6e6e6;');
     });
 
-    $(".get_bank").keyup(function () {
+    $(".get_bank").bind('keyup mouseup',function () {
         var value = $(this).val();
         value = value.replace(" ", "");
         var price = $('input[name=amount]').val();
