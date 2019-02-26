@@ -167,7 +167,12 @@ class Payment extends CI_Controller
         $webpos_bank['nestpay_client_id'] = $bank_info->nestpay_client_id;
         $webpos_bank['nestpay_3D_storekey'] = $bank_info->nestpay_3D_storekey;
         $webpos_bank['nestpay_3D_url'] = $bank_info->nestpay_3D_url;
-        $expiry_data = explode(' / ', $post['expiry']);
+        //$expiry_data = explode(' / ', $post['expiry']);
+        $expiry_data = explode('/', $post['expiry']);
+        foreach ($expiry_data as $key => $value) {
+            $expiry_data[$key] = trim($value);
+        }
+        
         $webpos_bank['cc_owner'] = $post['name'];
         $webpos_bank['cc_number'] = $this->replaceSpace($post['number']);
         $webpos_bank['cc_cvv2'] = $post['cvc'];
